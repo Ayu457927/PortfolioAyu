@@ -1,3 +1,5 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); 
 * {
     margin: 0;
@@ -6,10 +8,7 @@
     font-family: "Poppins", sans-serif;
 
 }
-form button:hover {
-    background-color: #104d6b;
-    transform: scale(1.05);
-}
+
 section {
     display: flex;
     justify-content: center;
@@ -31,10 +30,11 @@ section {
     padding: 50px;
 }
 header{
-    position: absolute;
-    top: -40px;
-    right: 20px;
-    left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -43,6 +43,7 @@ header{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -237,6 +238,14 @@ section#about, section#projects {
     padding: 100px 50px;
     background: #f8d7e5;
     text-align: center;
+}
+
+section {
+    scroll-margin-top: 65px;
+}
+
+section#home .container {
+    margin-top: 50px;
 }
 
 section h2 {
